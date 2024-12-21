@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width:230px;
+            height: 200px;
+            margin:10px;
+            padding:10px;
+        }
+        #area{
+            display:flex;
+            flex-direction: column;
+            gap:10px;
+            justify-content: center;
+            align-items: center;
+        }
+        input,button{
+            border-radius: 5px;
+        }
+        h2,h3{
+            margin:0px;
+        }
+        h2{
+            color:green;
+        }
+        #random{
+            width:fit-content;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+            <h2><b>Random Problem Picker</b></h2>
+            <h3><b> problem difficulty range</b></h3>
+            <input type="text"  id="from" placeholder="From">
+            <input type="text"  id="to" placeholder="To">
+            <button id="random">Get Random</button>
+        <ul id="linklist"></ul>
+    </div>
+    <script src="index.js" ></script>
+</body>
+</html>
